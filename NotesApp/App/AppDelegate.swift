@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = navController
         self.window?.makeKeyAndVisible()
-        
+        window?.overrideUserInterfaceStyle = .light
         CoreDataManager.shared.load()
         
         return true
