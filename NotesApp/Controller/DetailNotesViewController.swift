@@ -32,8 +32,6 @@ class DetailNotesViewController: UIViewController {
                                                             style: .done,
                                                             target: self,
                                                             action: #selector(saveNote))
-        
-//        navigationController?.navigationBar.prefersLargeTitles = false
         view.backgroundColor = .white
         view.addSubview(notesTextField)
         configureConstraints()

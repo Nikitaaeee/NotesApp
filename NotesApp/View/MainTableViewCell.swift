@@ -17,8 +17,7 @@ class MainTableViewCell: UITableViewCell {
             let label = UILabel()
             label.text = "text"
             label.numberOfLines = 2
-    //        label.backgroundColor = .blue
-        label.font = .systemFont(ofSize: 15, weight: .thin)
+            label.font = .systemFont(ofSize: 15, weight: .thin)
             return label
         } ()
 
@@ -26,17 +25,12 @@ class MainTableViewCell: UITableViewCell {
     
 //MARK: - Labels text
     func setup(note: Note) {
-//        titleLabel.text = note.title
-//        descriptionLabel.text = note.description
         noteText.text = note.tableText
-        
     }
     
 //MARK: - Required funcs
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-//        contentView.addSubview(titleLabel)
-//        contentView.addSubview(descriptionLabel)
         contentView.addSubview(noteText)
         configureConstraints()
     }
